@@ -39,11 +39,12 @@
     <meta name="msapplication-square310x310logo" content="https://www.pirati.cz/assets/favicon/mstile-310x310.">
     <!-- Fonts -->
     
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
-     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:200,400,700" rel="stylesheet">
     <link href="/static/css/main.css" rel="stylesheet">
     <link href="/static/css/main_local.css" rel="stylesheet">
+
+    <link href="/static/fonts/BebasNeue/BebasNeue.css" rel="stylesheet">
     
     <script src="/static/js/vendor/jquery.js"></script>
      
@@ -105,13 +106,17 @@
         .page-bottom { color: white; padding: 1.5em; width: 100%; background: #343434;}
 
         .action-button {
-            width: 350px; margin-top: 10px;
+            margin-top: 10px;
             padding: 22px;
             font-size: 22px;
             font-weight: bold;
             text-align: center;
             background-color: #323232;
             color: white;
+            display: inline-block;
+        }
+        .action-button.large { 
+            width: 350px;
         }
         .action-button:hover { box-shadow: 0 0 10px black; color: white; text-decoration: none; }
 
@@ -181,7 +186,7 @@
 
   .person > img { float: left; width: 50%; min-width: 100px; max-width:364px; padding: 1em 2em 1em 1em;}
   .person > .name { margin: 1.5em 0.5em 0em;  font-size: 1.4em; font-family: "Bebas Neue"; color: #1a1a1a; }
-  .person > .subtitle { font-family: "BebasNeueLight"; line-height: 1em; font-weight: bold; color: #212121; }
+  .person > .subtitle { font-family: "Bebas Neue"; font-weight: 300; color: #212121; letter-spacing: 1px; }
   .person > .desc { margin: 1em 0 0 50%; font-style: italic; }
   .person:first-child > .desc { margin: 1em 0 0 0; }
   .person > .desc > li { padding: 0 0 0 0.5em; }
@@ -397,7 +402,7 @@
           </li>
           <li class="c-contact-bar__item u-stacked-medium-down">
             <div class="c-contact-bar__section"> Web spravuje </div>
-            <div class="c-contact-bar__description"> Mediální odbor Pirátů</div>
+            <div class="c-contact-bar__description"> Technický odbor Pirátů</div>
           </li>
         </ul>
       </div>
