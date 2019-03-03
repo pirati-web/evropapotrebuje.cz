@@ -169,33 +169,29 @@
     </style>
     
 <style>
-  .kandidati { display: flex; flex-wrap: wrap; position: relative; }
-  .kandidati > .person { flex: 1 1 40%; margin: 1em 1em; }
-  .kandidati > .person:first-child { flex: 1 1 100%; margin-bottom: -1em; }
-
-  .person > img { float: left; width: 50%; min-width: 100px; max-width:364px; padding: 1em 2em 1em 1em;}
-  .person > .name { margin: 1.5em 0.5em 0em;  font-size: 1.4em; font-family: "Bebas Neue"; font-weight:bold; color: #1a1a1a; }
-  .person > .subtitle { font-family: "Bebas Neue"; font-weight: 300; color: #212121; letter-spacing: 1px; line-height: 1.1em; font-size: 0.9em; }
-  .person > .desc { margin: 1em 0 0 50%; font-style: italic; }
-  .person:first-child > .desc { margin: 1em 0 0 0; }
-  .person > .desc > li { padding: 0 0 0 0.5em; }
-
-  .person.celo > img { float: left; width: 50%; min-width: 100px; max-width:364px; padding: 1em;}
-  .person.celo > .name { font-size: 1.7em; }
-
-  @media screen and (max-width: 25em) {
-      .kandidati > .person > .subtitle { clear: both; text-align: center; }
+  .main-header { font-weight: bold; }
+  .subtitle { font-family: "Bebas Neue"; font-weight: 300; color: #212121;
+        letter-spacing: 1px; line-height: 1.1em;
+        font-size: 0.6em;
   }
+  .detail-img {
+      float: right;
+      text-align: center;
+      max-width: 300px;
+      padding: 0 2em;
+  }
+  .detail-img.big2 {
+      max-width: 400px;
+      margin-bottom: 1em;
+  }
+
   @media screen and (max-width: 40em) {
-      .kandidati > .person { flex: 1 1 100%; }
-      .kandidati > .person > .name { font-size: 1.5em; margin-top: 1.5em; }
-      hr { display: none }
+      .detail-img { float: none;
+            margin: 1em auto 2em;
+            padding: 0 1em;
+            }
   }
   @media screen and (max-width: 75em) {
-      .kandidati > .person { flex: 1 1 100%; margin-top: 2em;}
-      .kandidati > .person > .name { font-size: 1.5em; }
-      .kandidati > .person > .desc { margin: 1em 0 0 0;} 
-      hr { display: none }
   }
 </style>
 
@@ -236,89 +232,29 @@
 
 
 
-
 <div class="row">
-  <div class="medium-12 large-12 large-push0 columns">
+  <div class="medium-12 large-12 large-push-0 columns">
     <section class="o-section o-section--spaceBot">
-      <div class="o-section-inner" style="text-align: center;">
-        <img src="/static/img/celo-kandidatky-pirati-2019.jpg" style="max-height: 400px"/>
-      </div>
-      <div class="o-section-inner" style="text-align: center; margin-top:2em;">
-        <img src="/static/img/evropa-potrebuje-piraty.png" style="max-height: 400px" alt="Evropa potřebuje Piráty"/>
-      </div>
-      <br/>
-
       <div class="o-section-inner">
         <div class="o-section-block" data-equalizer data-equalize-on="medium">
-            <div class="kandidati">
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/1_Kolaja.jpg"/>
-              <div class="name">Marcel Kolaja</div>
-              <div class="subtitle">Manažer v&nbsp;softwarové firmě a&nbsp;expert na opensource technologie
-              </div>
-              <hr>
-              <div class="desc">
-                Rozhodl jsem se kandidovat do Evropského parlamentu, protože si vážím svobody, kterou máme, a&nbsp;nechci o&nbsp;ni přijít. Přeji si mít Evropu, ve které se nám bude dobře žít i&nbsp;dobře dýchat. A&nbsp;ve které bude bezpečno. S&nbsp;pirátským týmem se soustředíme na to, abychom spolu s&nbsp;Evropou prosperovali a&nbsp;nezaostali v&nbsp;konkurenci světových velmocí.
-              </div>
+          <div class="detail-img">
+  <img src="/static/img/kandidati/big/6_Kolek.jpg"/>
+</div>
+<h1 class="main-header">
+Ondřej Kolek
+</h1>
+
+<p>Ondřej Kolek je od roku 2014 předsedou pirátského krajského sdružení v&nbsp;Libe­reckém kraji. Pochází z&nbsp;Jablonce nad Nisou a&nbsp;vystudoval VŠCHT v&nbsp;Praze, kde získal doktorský titul. Během dvanáctileté praxe v&nbsp;průmyslu a&nbsp;v&nbsp;akademickém výzkumu se na pozici manažera zabýval plánováním projektů, grantovými žádostmi i&nbsp;jejich realizací.</p>
+
+<p>Jeho odborné profesní působení je spojeno s&nbsp;vývojem a&nbsp;výrobou monokrystalů, výzkumem elektrostatického zvlákňování nanovláken nebo vývojem nových metod v&nbsp;oblasti protikorozní ochrany. Na základě svých zkušeností říká, že Evropa potřebuje lepší využití digitálních prostředků a&nbsp;méně byrokracie. Silná a&nbsp;zdravá Evropa bude podle něj vyžadovat vzdělanou a&nbsp;demokratickou společnost a&nbsp;tato vize se bez reformy EU neobejde.</p>
+
+
+
+            <div class="" style="margin-top: 2em;">
+                <a href="/kandidati/#ondrej-kolek" class="action-button">Zpět na kandidáty</a>
             </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/2_Marketa.jpg"/>
-              <div class="name">Markéta Gregorová</div>
-              <div class="subtitle">Brněnská zastupitelka a&nbsp;předsedkyně Evropské pirátské strany
-              </div>
-              <hr>
-              <div class="desc">
-              Evropská unie není vzdálená instituce žijící svým životem &ndash; jsme to my všichni. Přesto máme někdy problém se orientovat či přímo angažovat v&nbsp;evropské politice. To chci změnit a&nbsp;být mostem mezi občany a&nbsp;Unií. Zjednodušme lidem zapojení do rozhodování o&nbsp;jejich budoucnosti a&nbsp;dojdeme tím k&nbsp;lepším společným řešením a&nbsp;informované společnosti.
-              </div>
-            </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/3_Peksa.jpg"/>
-              <div class="name">Mikuláš Peksa</div>
-              <div class="subtitle">Poslanec a&nbsp;místopředseda Pirátů
-              </div>
-              <hr>
-              <div class="desc">
-              Evropské peníze jsou peníze nás všech, každého z&nbsp;půl miliardy Evropanů. Chci, evropská daňová politika neumožňovala rozkrádání peněz korporacemi. S&nbsp;Piráty budeme v&nbsp;Evropském parlamentu dohlížet na to, abyhom prostředky využívali účelně, stejně jako to už teď děláme ve sněmovně.
-              </div>
-            </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/4_Blazej.jpg"/>
-              <div class="name">Lukáš Blažej</div>
-              <div class="subtitle">Protikorupční aktivista a&nbsp;odborník na právo životního prostředí
-              </div>
-              <hr>
-              <div class="desc">
-              Životnímu prostředí se věnuji dlouhodobě, ale teprve na stáži v&nbsp;Evropském parlamentu jsem poznal, jak důležitou roli v&nbsp;něm hrají europoslanci. Vymírání hmyzu, mikroplasty ve vodě nebo vysychání půdy &ndash; žádný z&nbsp;těchto problémů nelze vyřešit na úrovni jediného státu. S&nbsp;Piráty k&nbsp;nim přistupujeme racionálně na základě vědeckých  poznatků a&nbsp;s&nbsp;vaší pomocí v&nbsp;tom budeme pokračovat i&nbsp;v&nbsp;europarlamentu.
-              </div>
-            </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/5_Jana.jpg"/>
-              <div class="name">Jana Koláříková</div>
-              <div class="subtitle">HR manažerka a&nbsp;specialistka na rozvojovou spolupráci
-              </div>
-              <hr>
-              <div class="desc">
-              Chci ovlivňovat evropskou politiku, protože mi není lhostejná budoucnost. Pro naše děti by mělo být i&nbsp;nadále snadné cestovat a&nbsp;pracovat, kde se jim zachce. Naopak se mi příčí, aby ve 21. století a&nbsp;v&nbsp;době nadprodukce museli lidé řešit existenční problémy. Pro nás neexistují občané druhé kategorie. Všichni mají nárok na férové podmínky.
-              </div>
-            </div>
-            </div>
-          </div>
+        </div>
       </div>
-      <br/>
-        <div class="row">
-          <div class="medium-12 large-12 columns">
-            <section class="o-section o-section--spaceBot">
-              <div class="o-section-inner">
-              &nbsp;
-              </div>
-            </section>
-          </div>
-        </div>
-        <div id='do_register_button' style="    text-align: center;">
-        
-            <a href="/zapoj-se/" class="action-button"> Chci pomoci s&nbsp;kampaní <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-            </a>
-        </div>
     </section>
   </div>
 </div>

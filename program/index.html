@@ -169,34 +169,20 @@
     </style>
     
 <style>
-  .kandidati { display: flex; flex-wrap: wrap; position: relative; }
-  .kandidati > .person { flex: 1 1 40%; margin: 1em 1em; }
-  .kandidati > .person:first-child { flex: 1 1 100%; margin-bottom: -1em; }
+  .intro-img-quick { display: fle; flex-wrap: wrap; }
+  .intro-img-quick > img { flex: 1 1 50%; }
+  .intro-img-quick > img:first { flex: 1 1 100%; }
 
-  .person > img { float: left; width: 50%; min-width: 100px; max-width:364px; padding: 1em 2em 1em 1em;}
-  .person > .name { margin: 1.5em 0.5em 0em;  font-size: 1.4em; font-family: "Bebas Neue"; font-weight:bold; color: #1a1a1a; }
-  .person > .subtitle { font-family: "Bebas Neue"; font-weight: 300; color: #212121; letter-spacing: 1px; line-height: 1.1em; font-size: 0.9em; }
-  .person > .desc { margin: 1em 0 0 50%; font-style: italic; }
-  .person:first-child > .desc { margin: 1em 0 0 0; }
-  .person > .desc > li { padding: 0 0 0 0.5em; }
+  .program-blok .header {
+      font-weight: 300; font-size: 2em;
+      margin:1em 0em 0.3em 0;
+      font-family: "Bebas Neue";
+      text-transform: uppercase;
+  }
 
-  .person.celo > img { float: left; width: 50%; min-width: 100px; max-width:364px; padding: 1em;}
-  .person.celo > .name { font-size: 1.7em; }
+  .program-blok .topic { font-weight: bold; }
+  .program-blok ol { margin-left: 2em; }
 
-  @media screen and (max-width: 25em) {
-      .kandidati > .person > .subtitle { clear: both; text-align: center; }
-  }
-  @media screen and (max-width: 40em) {
-      .kandidati > .person { flex: 1 1 100%; }
-      .kandidati > .person > .name { font-size: 1.5em; margin-top: 1.5em; }
-      hr { display: none }
-  }
-  @media screen and (max-width: 75em) {
-      .kandidati > .person { flex: 1 1 100%; margin-top: 2em;}
-      .kandidati > .person > .name { font-size: 1.5em; }
-      .kandidati > .person > .desc { margin: 1em 0 0 0;} 
-      hr { display: none }
-  }
 </style>
 
 </head>
@@ -236,89 +222,80 @@
 
 
 
-
 <div class="row">
-  <div class="medium-12 large-12 large-push0 columns">
+  <div class="medium-12 large-10 large-push-1 columns">
     <section class="o-section o-section--spaceBot">
-      <div class="o-section-inner" style="text-align: center;">
-        <img src="/static/img/celo-kandidatky-pirati-2019.jpg" style="max-height: 400px"/>
-      </div>
-      <div class="o-section-inner" style="text-align: center; margin-top:2em;">
-        <img src="/static/img/evropa-potrebuje-piraty.png" style="max-height: 400px" alt="Evropa potřebuje Piráty"/>
-      </div>
-      <br/>
-
       <div class="o-section-inner">
         <div class="o-section-block" data-equalizer data-equalize-on="medium">
-            <div class="kandidati">
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/1_Kolaja.jpg"/>
-              <div class="name">Marcel Kolaja</div>
-              <div class="subtitle">Manažer v&nbsp;softwarové firmě a&nbsp;expert na opensource technologie
-              </div>
-              <hr>
-              <div class="desc">
-                Rozhodl jsem se kandidovat do Evropského parlamentu, protože si vážím svobody, kterou máme, a&nbsp;nechci o&nbsp;ni přijít. Přeji si mít Evropu, ve které se nám bude dobře žít i&nbsp;dobře dýchat. A&nbsp;ve které bude bezpečno. S&nbsp;pirátským týmem se soustředíme na to, abychom spolu s&nbsp;Evropou prosperovali a&nbsp;nezaostali v&nbsp;konkurenci světových velmocí.
-              </div>
-            </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/2_Marketa.jpg"/>
-              <div class="name">Markéta Gregorová</div>
-              <div class="subtitle">Brněnská zastupitelka a&nbsp;předsedkyně Evropské pirátské strany
-              </div>
-              <hr>
-              <div class="desc">
-              Evropská unie není vzdálená instituce žijící svým životem &ndash; jsme to my všichni. Přesto máme někdy problém se orientovat či přímo angažovat v&nbsp;evropské politice. To chci změnit a&nbsp;být mostem mezi občany a&nbsp;Unií. Zjednodušme lidem zapojení do rozhodování o&nbsp;jejich budoucnosti a&nbsp;dojdeme tím k&nbsp;lepším společným řešením a&nbsp;informované společnosti.
-              </div>
-            </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/3_Peksa.jpg"/>
-              <div class="name">Mikuláš Peksa</div>
-              <div class="subtitle">Poslanec a&nbsp;místopředseda Pirátů
-              </div>
-              <hr>
-              <div class="desc">
-              Evropské peníze jsou peníze nás všech, každého z&nbsp;půl miliardy Evropanů. Chci, evropská daňová politika neumožňovala rozkrádání peněz korporacemi. S&nbsp;Piráty budeme v&nbsp;Evropském parlamentu dohlížet na to, abyhom prostředky využívali účelně, stejně jako to už teď děláme ve sněmovně.
-              </div>
-            </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/4_Blazej.jpg"/>
-              <div class="name">Lukáš Blažej</div>
-              <div class="subtitle">Protikorupční aktivista a&nbsp;odborník na právo životního prostředí
-              </div>
-              <hr>
-              <div class="desc">
-              Životnímu prostředí se věnuji dlouhodobě, ale teprve na stáži v&nbsp;Evropském parlamentu jsem poznal, jak důležitou roli v&nbsp;něm hrají europoslanci. Vymírání hmyzu, mikroplasty ve vodě nebo vysychání půdy &ndash; žádný z&nbsp;těchto problémů nelze vyřešit na úrovni jediného státu. S&nbsp;Piráty k&nbsp;nim přistupujeme racionálně na základě vědeckých  poznatků a&nbsp;s&nbsp;vaší pomocí v&nbsp;tom budeme pokračovat i&nbsp;v&nbsp;europarlamentu.
-              </div>
-            </div>
-            <div class="person celo">
-              <img src="/static/img/kandidati/title/5_Jana.jpg"/>
-              <div class="name">Jana Koláříková</div>
-              <div class="subtitle">HR manažerka a&nbsp;specialistka na rozvojovou spolupráci
-              </div>
-              <hr>
-              <div class="desc">
-              Chci ovlivňovat evropskou politiku, protože mi není lhostejná budoucnost. Pro naše děti by mělo být i&nbsp;nadále snadné cestovat a&nbsp;pracovat, kde se jim zachce. Naopak se mi příčí, aby ve 21. století a&nbsp;v&nbsp;době nadprodukce museli lidé řešit existenční problémy. Pro nás neexistují občané druhé kategorie. Všichni mají nárok na férové podmínky.
-              </div>
-            </div>
-            </div>
-          </div>
-      </div>
-      <br/>
-        <div class="row">
-          <div class="medium-12 large-12 columns">
-            <section class="o-section o-section--spaceBot">
-              <div class="o-section-inner">
-              &nbsp;
-              </div>
-            </section>
-          </div>
+        <h1 class="main-header">20 priorit Pirátů pro
+            <span class="pbw"><span class="pbw pb">evropsk</span>ý<span class="pbw pb">&nbsp;parlament</span></span>
+        </h1>
+
+        <div style="text-align: center">
+        Určili jsme si 20 nejdůležitějších bodů, kterým se chceme na úrovni Evropské unie věnovat.
         </div>
-        <div id='do_register_button' style="    text-align: center;">
-        
-            <a href="/zapoj-se/" class="action-button"> Chci pomoci s&nbsp;kampaní <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+
+<div class='program-blok'>
+<div class="header">Evropa potřebuje <span class="pbw pb">SVOBODU</span></div>
+<ol>
+<li><span class="topic">Zachování svobody pohybu v EU:</span> Budeme bránit jednotný evropský trh zboží i služeb a možnost jednoduše cestovat a pracovat v zahraničí.</li>
+<li><span class="topic">Ochrana Evropy před hrozbami zvenčí i zevnitř:</span> Posílíme vnější hranice a společnou obrannou politiku. Podpoříme investice do otevřených technologií, které zajistí kyberbezpečnost.</li>
+<li><span class="topic">Internet bez cenzury:</span> Potřebujeme zásadně reformovat autorské právo. Odpovědnost poskytovatelů za obsah je zpátečnický krok a zvýhodňuje největší internetové hráče.  </li>
+<li><span class="topic">Postavíme se autoritářům potlačujícím demokracii:</span> Mír v Evropě musíme chránit před diktátory a extremisty.</li>
+</ol>
+</div>
+
+<div class='program-blok'>
+<div class="header">Evropa potřebuje <span class="pbw pb">UPGRADE</span></div>
+<ol>
+<li><span class="topic">Evropská politika transparentnější a bližší lidem:</span> Každý člověk musí mít jednoduše dostupné informace o práci poslanců v Bruselu. Poskytneme lidem možnost se k návrhům vyjádřit online.</li>
+<li><span class="topic">Smysluplné rozhodování:</span> Pohlídáme, aby se rozhodování o lokálních otázkách nepřesouvalo zbytečně na vyšší úrovně. Nechceme, aby se EU topila v byrokracii.</li>
+<li><span class="topic">Pohodlnější pohyb po Evropě:</span> Podpoříme vybudování vysokorychlostních železnic a další infrastruktury pro efektivní propojení Česka a evropské sítě. </li>
+<li><span class="topic">Podpora a rozvoj Erasmu:</span> Podpoříme více výměnných pobytů pro učitele a středoškoláky, které rozvíjí jazykové dovednosti a podporují mezinárodní spolupráci.</li>
+</ol>
+</div>
+
+<div class='program-blok'>
+<div class="header">Evropa potřebuje <span class="pbw"><span class="pbw pb">BOHATSTV</span>Í</span></div>
+<ol>
+<li><span class="topic">Kde firma podniká, tam má také danit:</span> Zasáhneme proti daňovým únikům korporací a daňovým rájům.</li>
+<li><span class="topic">Transparentní hospodaření s evropskými penězi:</span> Evropa potřebuje přísnější a jasnější pravidla pro dotace a lobbistické aktivity.</li>
+<li><span class="topic">Reforma evropské zemědělské politiky:</span> Dotace pro velké zemědělské koncerny musí mít finanční limit. Ušetřené peníze můžeme investovat do rozvoje regionů a venkova.</li>
+<li><span class="topic">Evropa jako technologický lídr:</span> Podpoříme malé a střední podnikatele a rozvoj moderních technologií. Nechceme, aby svazující patentová pravidla bránila inovacím. </li>
+</ol>
+</div>
+
+<div class='program-blok'>
+<div class="header">Evropa potřebuje <span class="pbw"><span class="pbw pb">UDR</span>Ž<span class="pbw pb">ITELNOST</span></span></div>
+<ol>
+<li><span class="topic">Půjdeme příkladem v boji suchu a dalším dopadům změny klimatu:</span> Podporujeme přechod na čistší a obnovitelné zdroje energie snižováním závislosti na fosilních palivech a smysluplnou úsporu energie.</li>
+<li><span class="topic">Pěstujme jídlo, ne paliva:</span> Chceme udržitelné zemědělství zlepšující kvalitu půdy, život zvířat a biodiverzitu. Dotace pro farmáře budou podmíněny šetrným přístupem ke krajině.</li>
+<li><span class="topic">Nejlepší je odpad, který nevznikne:</span> Výrobci nesmí úmyslně snižovat životnost výrobků nebo bránit v jejich opravách. U odpadu, jehož vzniku nelze zabránit, podpoříme snadnou recyklaci.</li>
+<li><span class="topic">Nechceme žít v záplavě plastu:</span> Podporujeme ekologičtější alternativy, používání biologicky rozložitelných materiálů a omezení výrobků na jedno použití.</li>
+</ol>
+</div>
+
+<div class='program-blok'>
+<div class="header">Evropa potřebuje <span class="pbw pb">SPRAVEDLNOST</span></div>
+<ol>
+<li><span class="topic">Nejsme smetiště Evropy:</span> Zasloužíme si stejnou úroveň kvality potravin a spotřebního zboží jako zbytek Evropy.</li>
+<li><span class="topic">Stejný přístup k digitálním službám:</span> Podpoříme jednotný digitální trh bez hranic tak, aby služby jako internetové vysílání nebyly omezeny zemí pobytu.</li>
+<li><span class="topic">Stejné šance pro ženy a muže:</span> Zaměříme se na zdravou rovnováhu mezi pracovním a rodinným životem a na podporu pečujících osob.</li>
+<li><span class="topic">Fér pracovní podmínky pro všechny:</span> Jsme proti vykořisťování levné pracovní síly agenturami. Lepší pracovní příležitosti podpoříme i investicemi do celoživotního vzdělávání.</li>
+</ol>
+</div>
+
+Společný program Evropské pirátské strany bude k dispozici od 7. března.
+
+        </div>
+        <br/><br/>
+        <br/><br/>
+        <div  style="text-align: center;">
+            <a href="/zapoj-se/" class="action-button"> Chci pomoci s kampaní <i class="fa fa-thumbs-up" aria-hidden="true"></i>
             </a>
         </div>
+      </div>
     </section>
   </div>
 </div>
