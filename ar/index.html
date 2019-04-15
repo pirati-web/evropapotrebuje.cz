@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta charset="utf-8">
+		<title>Evropa potřebuje Piráty - Pirátská strana</title>
     </head>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
@@ -53,24 +54,45 @@
 	</script>
     
     <body style='margin : 0px; overflow: hidden;'>		
+	
 		<p id="Loading" style='text-align: center; z-index: -1;'>
-			<img src="loading.gif" alt="Prosím, čekejte..." />
+			<img src="loading.gif" alt="Prosím, čekejte..." style='margin: 1em;' />
 		</p>
 	
-		<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' vr-mode-ui='enabled: false'>
+		<a-scene
+			embedded
+			arjs='sourceType: webcam; debugUIEnabled: false;'
+			vr-mode-ui='enabled: false'>
 
 			<a-assets>
-				<a-asset-item id="IvanBartos" src="IvanBartos.gltf" preload="auto"></a-asset-item>
-				<a-asset-item id="Speach" src="IvanBartos.mp3" response-type="arraybuffer"></a-asset-item>
+			
+				<a-asset-item
+					id="IvanBartos"
+					src="IvanBartos.gltf"
+					preload="auto">
+				</a-asset-item>
+				
+				<a-asset-item
+					id="Speach"
+					src="IvanBartos.mp3"
+					response-type="arraybuffer">
+				</a-asset-item>
+				
 			</a-assets>
 
-			<a-marker type="pattern" preset="custom" url="marker.patt" registerevents>
+			<a-marker
+				type="pattern"
+				preset="custom"
+				url="marker.patt"
+				registerevents>
+				
 				<a-entity
 					id="animation"
 					gltf-model="#IvanBartos"
 					animation-mixer="timeScale: 0"
 					scale="1 1 1">
 				</a-entity>
+				
 			</a-marker>
 						
 			<a-entity
