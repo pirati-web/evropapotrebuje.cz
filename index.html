@@ -190,6 +190,12 @@
   .person.celo img { float: left; width: 50%; min-width: 100px; max-width:364px; padding: 1em;}
   .person.celo > .name { font-size: 1.7em; }
 
+  .header-cols { display: flex; }
+  .header-cols .hc-left { flex: 1 1 65%; }
+  .header-cols .hc-right { flex: 1 1 30%; margin: 1em; border:1px solid black; padding: 0.5em; margin-top: 2em; }
+  .header-cols .hc-right .act-btn {text-align: right; margin-top: 0.25em; margin-bottom:1em;} 
+  .header-cols .hc-right .act-btn .action-button { padding: 0.25em 1em; margin: 0; margin-right: 1em;} 
+
   @media screen and (max-width: 25em) {
       .kandidati > .person > .subtitle { clear: both; text-align: center; }
   }
@@ -203,6 +209,7 @@
       .kandidati > .person > .name { font-size: 1.5em; }
       .kandidati > .person > .desc { margin: 1em 0 0 0;} 
       hr { display: none }
+      .header-cols { display: block; }
   }
 </style>
 
@@ -251,11 +258,40 @@
 <div class="row">
   <div class="medium-12 large-12 large-push0 columns">
     <section class="o-section o-section--spaceBot">
-      <div class="o-section-inner" style="text-align: center;">
-        <img src="/static/img/celo-kandidatky-pirati-2019.jpg" style="max-height: 400px"/>
-      </div>
-      <div class="o-section-inner" style="text-align: center; margin-top:2em;">
-        <img src="/static/img/evropa-potrebuje-piraty.png" style="max-height: 400px" alt="Evropa potřebuje Piráty"/>
+      <div class="header-cols">
+          <div class="hc-left">
+              <div class="o-section-inner" style="text-align: center;">
+                <img src="/static/img/celo-kandidatky-pirati-2019.jpg" style="max-height: 400px"/>
+              </div>
+              <div class="o-section-inner" style="text-align: center; margin-top:2em;">
+                <img src="/static/img/evropa-potrebuje-piraty.png" style="max-height: 400px" alt="Evropa potřebuje Piráty"/>
+              </div>
+          </div>
+          <div class="hc-right">
+            <p>Volby se blíží - zapojte se!</p>
+            <ul>
+                <li>Vyvěsím pirátskou plachtu a ukážu všem, že volím piráty<br/>
+                    <div class="act-btn">
+                    <a href="https://forms.gle/aXbDt873oZHV8ost7" target="_blank" class="action-button"> Chci zdarma plachtu </a>
+                    </div>
+                </li>
+                <li>Koupím si tričko, tašku, piráské listy a doplňky pro sebe i známé<br/>
+                    <div class="act-btn">
+                    <a href="https://www.piratskyobchod.cz/" class="action-button" target="_blank"> Chci pirátský balíček </a>
+                    </div>
+                </li>
+                <li>Budu volit mimo své bydliště<br/>
+                    <div class="act-btn">
+                    <a href="https://www.facebook.com/events/385368418723441/" class="action-button" target="_blank"> Chci voličský průkaz </a>
+                    </div>
+                </li>
+                <li>Vytisknu si plakát, letáky nebo banner<br/>
+                    <div class="act-btn">
+                    <a href="https://www.pirati.cz/download/#ep2019" class="action-button" target="_blank"> Chci eurovolební grafiku </a>
+                    </div>
+                </li>
+            </ul>
+          </div>
       </div>
       <br/>
 
